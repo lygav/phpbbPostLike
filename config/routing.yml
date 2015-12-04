@@ -1,0 +1,5 @@
+lygav_phpbbPostLike_hello_world_controller:
+    path: /likepost/{post_id}
+    defaults: { _controller: lygav.phpbbPostLike.controller:like }
+    requirements:
+            post_id: \d+

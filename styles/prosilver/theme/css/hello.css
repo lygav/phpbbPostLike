@@ -1,0 +1,29 @@
+.like_container {
+    padding: 5px;
+}
+
+/*.like_container span {*/
+    /*float: right;*/
+/*}*/
+
+.like_a_post_btn:hover {
+    text-decoration: underline;
+}
+
+.like_a_post_btn {
+    background-image: url("../images/like_sprite.png");
+    background-position: 27px 0;
+    width: 37px;
+    height: 15px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding: 3px;
+}
+
+@media only screen and (max-width: 500px), only screen and (max-device-width: 500px) {
+    .like_container  {
+        /*max-width: 50px;*/
+        /*text-align: right;*/
+    }
+}

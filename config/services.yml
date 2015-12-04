@@ -1,0 +1,23 @@
+services:
+    lygav.phpbbPostLike.controller:
+        class: lygav\phpbbPostLike\controller\controller
+        arguments:
+            - @config
+            - @config_text
+            - @dbal.conn
+            - @controller.helper
+            - @request
+            - @user
+            - @template
+            - %core.table_prefix%
+
+    lygav.phpbbPostLike.listener:
+        class: lygav\phpbbPostLike\event\main_listener
+        arguments:
+            - @controller.helper
+            - @template
+            - @dbal.conn
+            - @user
+            - %core.table_prefix%
+        tags:
+            - { name: event.listener }

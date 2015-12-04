@@ -1,0 +1,25 @@
+{
+	"name": "lygav/phpbbPostLike",
+	"type": "phpbb-extension",
+	"description": "A Facebook like 'Like' button for PHPBB , complete with text and numerical counter",
+	"homepage": "",
+	"version": "1.0.0",
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Vlad Lyga",
+			"email": "lyvladi@gmail.com",
+			"homepage": "",
+			"role": "developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"extra": {
+		"display-name": "lygav/phpbbPostLike - A Facebook like 'Like' button for PHPBB",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.0"
+		}
+	}
+}

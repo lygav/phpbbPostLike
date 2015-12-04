@@ -1,0 +1,22 @@
+<div class="like_container {postrow.LIKE_CONT_BG_CLASS}">
+    <!-- IF not postrow.SHOW_ANON_LIKES -->
+    <a href="/app.php/likepost/{postrow.POST_ID}?{postrow.LIKE_QUERY_DATA}"
+       data-ajax="post_liked" class="like_a_post_btn">
+        Like
+    </a>
+    <!-- ENDIF -->
+    <span id="like_opt_text_{postrow.POST_ID}">
+        <!-- IF postrow.ONLY_USER_LIKE -->
+            {L_YOU_LIKE_THIS}
+        <!-- ENDIF -->
+        <!-- IF postrow.EVERYBODY_LIKE -->
+            {L_YOU_AND} {postrow.OTHER_LIKES_COUNT} {L_OTHERS_LIKE_THIS}
+        <!-- ENDIF -->
+        <!-- IF postrow.ONLY_OTHERS_LIKE -->
+            {postrow.OTHER_LIKES_COUNT} {L_OTHERS_LIKE_THIS}
+        <!-- ENDIF -->
+        <!-- IF postrow.SHOW_ANON_LIKES and postrow.OTHER_LIKES_COUNT -->
+            {postrow.OTHER_LIKES_COUNT} {L_OTHERS_LIKE_THIS}
+        <!-- ENDIF -->
+    </span>
+</div>
