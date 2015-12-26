@@ -26,5 +26,8 @@ that will look and behave just as the famous Facebook `Like`.
 - ```git clone https://github.com/lygav/phpbbPostLike.git```
 - Go to admin panel -> customize -> extensions -> install phpbbPostLike
 
+## Screenshots
+
+![screen shot] (https://github.com/lygav/phpbbPostLike/blob/master/docs/images/simple_like.png)
 
 Have Fun
